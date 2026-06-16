@@ -1,0 +1,6 @@
+{
+  "name": "Luxerra",
+  "description": "High-fidelity luxury car rental landing page in Los Angeles featuring an elite supercar fleet, personal rental assistants, and streamlined priority delivery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
