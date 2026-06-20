@@ -11,15 +11,17 @@ export default function Hero({ onOpenBooking }: HeroProps) {
       {/* Background Image with Dark Fades */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/Meerci.jpg"
+          src="/images/Meerci.jpg"
           alt="Luxerra Premium Showcase background"
           referrerPolicy="no-referrer"
           className="w-full h-full object-cover object-center scale-105 animate-pulse-slow brightness-90 saturate-[1.1]"
         />
         {/* Gradients to fade out the image and overlay luxurious deep rich shades */}
+        <div className="absolute inset-0 bg-gradient-to-r from-zinc-950 via-zinc-950/70 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-zinc-950/50" />
       </div>
 
-      <div className="absolute-left relative z-10 max-w-3xl px-4 sm:px-6 lg:px-8 w-full py-11 md:py-24 md:mt-110">
+      <div className="relative z-10 max-w-3xl px-4 sm:px-6 lg:px-8 w-full py-12 md:py-24">
         <div className="max-w-2xl text-left">
 
 
@@ -28,7 +30,7 @@ export default function Hero({ onOpenBooking }: HeroProps) {
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="mt-6 font-display font-semibold text-4xl sm:text-6xl text-white tracking-tight leading-[1.1]"
+            className="mt-90 font-display font-semibold text-4xl sm:text-6xl text-white tracking-tight leading-[1.1]"
           >
             Premium Car Rental <br />
             <span className="">in Indonesia</span>

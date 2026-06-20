@@ -108,14 +108,14 @@ export default function ConciergeChat() {
             initial={{ opacity: 0, scale: 0.95, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
-            className="fixed bottom-24 right-6 z-40 w-full max-w-sm overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-950 text-white shadow-2xl flex flex-col h-[500px]"
+            className="fixed bottom-24 right-4 left-4 sm:left-auto sm:right-6 z-40 w-auto sm:w-[380px] overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-950 text-white shadow-2xl flex flex-col h-[420px] sm:h-[500px]"
           >
             {/* Chat header */}
             <div className="bg-zinc-900 px-4 py-3 border-b border-zinc-800 flex items-center justify-between">
               <div className="flex items-center gap-3">
                 <div className="relative">
                   <img
-                    src="/src/assets/images/michael_carter_1781459236670.jpg"
+                    src="/images/michael_carter_1781459236670.jpg"
                     alt="Michael Carter"
                     className="h-9 w-9 rounded-full object-cover border border-emerald-500/30"
                     referrerPolicy="no-referrer"

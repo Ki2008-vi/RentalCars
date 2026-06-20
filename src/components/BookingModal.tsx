@@ -98,7 +98,7 @@ export default function BookingModal({ isOpen, onClose, selectedCarId, onSuccess
           animate={{ scale: 1, y: 0, opacity: 1 }}
           exit={{ scale: 0.96, y: 30, opacity: 0 }}
           data-lenis-prevent
-          className="relative w-full max-w-6xl overflow-hidden rounded-3xl border border-zinc-800/80 bg-zinc-950 text-white shadow-2xl md:grid md:grid-cols-12 max-h-[90vh] overflow-y-auto"
+          className="relative w-full max-w-6xl overflow-hidden rounded-3xl border border-zinc-800/80 bg-zinc-950 text-white shadow-2xl lg:grid lg:grid-cols-12 max-h-[90vh] overflow-y-auto"
         >
           {/* Close button */}
           <button
@@ -152,7 +152,7 @@ export default function BookingModal({ isOpen, onClose, selectedCarId, onSuccess
           ) : (
             <>
               {/* Left Column: Invoice & Spec Summary */}
-              <div className="col-span-12 border-b border-zinc-800 bg-zinc-900/20 p-8 md:col-span-5 md:border-b-0 md:border-r md:p-12 flex flex-col justify-between">
+              <div className="col-span-12 border-b border-zinc-800 bg-zinc-900/20 p-8 lg:col-span-5 lg:border-b-0 lg:border-r lg:p-12 flex flex-col justify-between">
                 <div>
                   <span className="inline-flex rounded-full bg-zinc-900 border border-zinc-800 px-4 py-1.5 text-xs font-semibold text-zinc-400 tracking-wider uppercase">
                     Premium Quote
@@ -219,7 +219,7 @@ export default function BookingModal({ isOpen, onClose, selectedCarId, onSuccess
               </div>
 
               {/* Right Column: Checkout Form */}
-              <div className="col-span-12 p-8 md:col-span-7 md:p-12">
+              <div className="col-span-12 p-8 lg:col-span-7 lg:p-12">
                 <div className="mb-8">
                   <h3 className="font-display text-3xl font-bold text-white tracking-tight">Personal Information</h3>
                   <p className="text-sm text-zinc-400 mt-2 leading-relaxed">Please provide accurate validation data for your premium contract proposal.</p>
@@ -324,7 +324,7 @@ export default function BookingModal({ isOpen, onClose, selectedCarId, onSuccess
                       />
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                       <div>
                         <label className="block text-xs font-bold uppercase tracking-widest text-zinc-400 mb-2">Email Address</label>
                         <input

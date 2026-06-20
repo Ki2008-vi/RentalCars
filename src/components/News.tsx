@@ -2,9 +2,9 @@ import { NEWS } from '../data';
 
 // Map each news story id to a unique local image
 const NEWS_IMAGES: Record<string, string> = {
-  'news-1': '/src/assets/images/porschedesign.jpg',
-  'news-2': '/src/assets/images/amg.jpg',
-  'news-3': '/src/assets/images/aston.jpg',
+  'news-1': '/images/porschedesign.jpg',
+  'news-2': '/images/amg.jpg',
+  'news-3': '/images/aston.jpg',
 };
 
 export default function News() {
@@ -35,7 +35,7 @@ export default function News() {
               {/* Unique Photo per card */}
               <div className="w-full aspect-video overflow-hidden">
                 <img
-                  src={NEWS_IMAGES[story.id] ?? '/src/assets/images/dodge.jpg'}
+                  src={NEWS_IMAGES[story.id] ?? '/images/dodge.jpg'}
                   alt={story.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />

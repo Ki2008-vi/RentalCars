@@ -9,9 +9,9 @@ export default function Process() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           
           {/* Left - Car Image */}
-          <div className="relative overflow-hidden rounded-2xl h-[500px] lg:h-[600px]">
+          <div className="relative overflow-hidden rounded-2xl h-[280px] sm:h-[450px] lg:h-[600px]">
             <img 
-              src="../src/assets/images/amg.jpg" 
+              src="/images/amg.jpg"
               alt="Luxury Sports Car" 
               className="w-full h-full object-cover"
             />

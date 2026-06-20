@@ -48,7 +48,7 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
           isScrolled ? 'bg-zinc-950/85 backdrop-blur-md border-b border-zinc-900 py-3' : 'bg-transparent py-5'
         }`}
       >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:ms-5">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-[auto_1fr_auto] items-center h-14 gap-6">
           {/* Logo */}
           <a href="#" className="flex gap-2 items-center">
@@ -62,13 +62,13 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
           </a>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden md:flex justify-center items-center justify-self-center md:ms-125">
+          <nav className="hidden md:flex justify-center items-center justify-self-center">
             <div className="flex items-center gap-7">
               {menuItems.map((item) => (
                 <a
                   key={item.label}
                   href={item.href}
-                  className="group relative text-white text-sm tracking-wider uppercase transition-colors md:mb-4 font-display"
+                  className="group relative text-white text-sm tracking-wider uppercase transition-colors font-display"
                 >
                   <span className="relative z-10">{item.label}</span>
                   <span className="absolute left-0 -bottom-1 h-[2px] bg-white w-0 group-hover:w-full transition-all duration-300 rounded-full" />

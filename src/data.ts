@@ -11,7 +11,7 @@ export const FLEET: Car[] = [
     topSpeed: '320 km/h',
     acceleration: '3.2s',
     power: '520 hp',
-    image: '/src/assets/images/porsche_911_1781459165050.jpg',
+    image: '/images/porsche_911_1781459165050.jpg',
     specs: {
       engine: '4.0 N/A Flat-6',
       drivetrain: 'RWD',
@@ -28,7 +28,7 @@ export const FLEET: Car[] = [
     topSpeed: '330 km/h',
     acceleration: '3.4s',
     power: '562 hp',
-    image: '/src/assets/images/audi_r8_1781459183160.jpg',
+    image: '/images/audi_r8_1781459183160.jpg',
     specs: {
       engine: '5.2L Naturally Aspirated V10',
       drivetrain: 'AWD',
@@ -45,7 +45,7 @@ export const FLEET: Car[] = [
     topSpeed: '318 km/h',
     acceleration: '3.5s',
     power: '577 hp',
-    image: '/src/assets/images/mercedes_amg_1781459199408.jpg',
+    image: '/images/mercedes_amg_1781459199408.jpg',
     specs: {
       engine: '4.0L twin-turbocharged V8',
       drivetrain: 'RWD',
@@ -62,7 +62,7 @@ export const FLEET: Car[] = [
     topSpeed: '314 km/h',
     acceleration: '3.6s',
     power: '503 hp',
-    image: '/src/assets/images/aston_martin_1781459217509.jpg',
+    image: '/images/aston_martin_1781459217509.jpg',
     specs: {
       engine: '4.0L Twin-Turbo V8',
       drivetrain: 'RWD',

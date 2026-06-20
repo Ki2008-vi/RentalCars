@@ -2,20 +2,20 @@ import { STEPS } from '../data';
 
 const FEATURES = [
   {
-    image: '../src/assets/images/aston.jpg', // replace with your actual image paths
+    image: '/images/aston.jpg', // replace with your actual image paths
     title: 'Fully insured, no surprises',
     description: 'Your rental includes full coverage,\nso you can drive with complete peace of mind.',
   },
   {
-    image: '../src/assets/images/lambus.jpg',
+    image: '/images/lambus.jpg',
     title: 'Clear pricing, no hidden fees',
     description: 'What you see is what you pay.\nNo unexpected charges after your trip.',
   },
 ];
 
-export default function Process() {
+export default function Values() {
   return (
-    <section id="process" className="bg-zinc-950 py-24 scroll-mt-141">
+    <section id="values" className="bg-zinc-950 py-24 scroll-mt-14">
       <div className="w-full max-w-[1800px] mx-auto px-4 sm:px-8 lg:px-12">
 
         {/* Heading */}
@@ -41,7 +41,7 @@ export default function Process() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
               {/* Text overlay — bottom left */}
-              <div className="absolute bottom-0 left-0 p-6 sm:p-8">
+              <div className="absolute bottom-0 left-0 p-5 sm:p-8">
                 <h3 className="font-display font-semibold text-white text-lg sm:text-xl mb-1.5">
                   {feature.title}
                 </h3>

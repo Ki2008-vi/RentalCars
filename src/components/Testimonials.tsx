@@ -19,7 +19,7 @@ export default function Testimonials() {
         </div>
 
         {/* Testimonials Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
           {TESTIMONIALS.map((t) => (
             <div
               key={t.id}

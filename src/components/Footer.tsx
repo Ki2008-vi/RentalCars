@@ -72,19 +72,19 @@ export default function Footer({ onOpenBooking }: FooterProps) {
               </div>
             ) : (
               <form onSubmit={handleSubscribe} className="mt-8 space-y-4">
-                <div className="flex gap-3">
+                <div className="flex flex-col sm:flex-row gap-3">
                   <input
                     type="email"
                     value={emailInput}
                     onChange={(e) => setEmailInput(e.target.value)}
                     placeholder="Enter your email address"
                     required
-                    className="flex-1 bg-zinc-900 border border-zinc-850 text-base rounded-xl px-5 py-4 text-white placeholder-zinc-650 focus:outline-none focus:border-white"
+                    className="flex-1 bg-zinc-900 border border-zinc-850 text-base rounded-xl px-5 py-4 text-white placeholder-zinc-650 focus:outline-none focus:border-white w-full"
                   />
                   <button
                     type="submit"
                     disabled={!agreePolicy}
-                    className="bg-white hover:bg-zinc-200 text-black py-4 px-6 rounded-xl text-sm font-bold transition-all disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center cursor-pointer"
+                    className="bg-white hover:bg-zinc-200 text-black py-4 px-6 rounded-xl text-sm font-bold transition-all disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center cursor-pointer w-full sm:w-auto"
                   >
                     Subscribe
                   </button>

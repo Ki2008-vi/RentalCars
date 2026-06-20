@@ -10,6 +10,7 @@ import FAQ from './components/FAQ';
 import News from './components/News';
 import Footer from './components/Footer';
 import BookingModal from './components/BookingModal';
+import ConciergeChat from './components/ConciergeChat';
 import { motion, AnimatePresence, useInView } from 'motion/react';
 import Lenis from 'lenis';
 
@@ -133,6 +134,9 @@ export default function App() {
         selectedCarId={selectedCarId}
         onSuccess={(msg) => triggerToast(msg)}
       />
+
+      {/* Personal Concierge Chat Bubble */}
+      <ConciergeChat />
 
       {/* Elegant Live Toast Notifications */}
       <AnimatePresence>

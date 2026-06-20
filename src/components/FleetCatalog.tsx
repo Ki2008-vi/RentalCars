@@ -27,12 +27,12 @@ export default function FleetCatalog({ onSelectCar }: FleetCatalogProps) {
         </div>
 
         {/* Luxury Brand Filter Pills */}
-        <div className="mb-12 flex justify-center gap-2">
+        <div className="mb-12 flex items-center gap-2 overflow-x-auto whitespace-nowrap pb-3 -mx-4 px-4 sm:mx-0 sm:px-0 sm:justify-center scrollbar-none">
           {brands.map((brand) => (
             <button
               key={brand}
               onClick={() => setSelectedBrand(brand)}
-              className={`px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-full transition-all duration-300 cursor-pointer ${
+              className={`px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-full transition-all duration-300 cursor-pointer shrink-0 ${
                 selectedBrand === brand
                   ? 'bg-white text-black'
                   : 'bg-zinc-900/40 text-zinc-500 hover:text-zinc-200 border border-zinc-800/40 hover:bg-zinc-900/80'
@@ -73,12 +73,12 @@ export default function FleetCatalog({ onSelectCar }: FleetCatalogProps) {
                   />
                   
                   {/* Top-left spec pills (Top Speed / 0-100 / Power) */}
-                  <div className="absolute top-5 left-5 z-10 flex gap-2">
-                    <span className="bg-black text-white text-[11px] font-medium tracking-wide px-3 py-1.5 rounded-full">{car.topSpeed}</span>
-                    <span className="bg-black text-white text-[11px] font-medium tracking-wide px-3 py-1.5 rounded-full">
+                  <div className="absolute top-3 left-3 sm:top-5 sm:left-5 z-10 flex gap-1.5 sm:gap-2">
+                    <span className="bg-black text-white text-[9px] sm:text-[11px] font-medium tracking-wide px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-full">{car.topSpeed}</span>
+                    <span className="bg-black text-white text-[9px] sm:text-[11px] font-medium tracking-wide px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-full">
                       {car.acceleration.endsWith('s') ? car.acceleration.replace('s', ' sec') : car.acceleration}
                     </span>
-                    <span className="bg-black text-white text-[11px] font-medium tracking-wide px-3 py-1.5 rounded-full">{car.power}</span>
+                    <span className="bg-black text-white text-[9px] sm:text-[11px] font-medium tracking-wide px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-full">{car.power}</span>
                   </div>
                 </div>
 

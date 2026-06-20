@@ -66,7 +66,7 @@ export default function RentalTerms({ onOpenBooking }: RentalTermsProps) {
             {/* Assistant row */}
             <div className="mt-10 flex items-center gap-4">
               <img
-                src="/src/assets/images/michael_carter_1781459236670.jpg"
+                src="/images/michael_carter_1781459236670.jpg"
                 alt="Michael Carter"
                 referrerPolicy="no-referrer"
                 className="h-16 w-16 sm:h-20 sm:w-20 rounded-full object-cover border border-zinc-800"
@@ -89,12 +89,12 @@ export default function RentalTerms({ onOpenBooking }: RentalTermsProps) {
             </div>
           </div>
 
-          {/* Right Column: 2×2 grid of minimal dark term cards */}
-          <div className="grid grid-cols-2 gap-6">
+          {/* Right Column: responsive grid of minimal dark term cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             {TERMS.map((term) => (
               <div
                 key={term.id}
-                className="bg-zinc-900/50 rounded-2xl border border-zinc-800/50 p-8 flex flex-col gap-4 hover:border-zinc-700/60 transition-colors text-left"
+                className="bg-zinc-900/50 rounded-2xl border border-zinc-800/50 p-5 sm:p-8 flex flex-col gap-4 hover:border-zinc-700/60 transition-colors text-left"
               >
                 {/* Icon */}
                 <div className="text-zinc-400">
